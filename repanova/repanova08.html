@@ -1,28 +1,28 @@
-<html>
+ï»¿<html>
    <STYLE TYPE=TEXT/CSS>
       @import url(highlight.css);
    </STYLE>
- <b><h3> µÎ ¿äÀÎ ¹Ýº¹ÃøÁ¤ ºÐ»êºÐ¼®(two - way repeated measures analysis of variance) </h3></b>
- ¹Ýº¹ÃøÁ¤ÇÑ º¯¼ö¸¦ <b>°³Ã¼-³» º¯¼ö</b>¿¡ Ãß°¡ÇÑ´Ù.
- µÎ ¿äÀÎÀÎ °æ¿ì ¿äÀÎ¼ö´Â Ã¹ ¹øÂ° ¿äÀÎ¼ö¿Í µÎ ¹øÂ° ¿äÀÎ¼ö¸¦ °öÇÑ °ªÀÌ ºÐ¼®¿¡ »ç¿ëÇÒ ¿äÀÎ¼öÀÌ´Ù.
- ¿©±â¼­´Â ¿äÀÎ¼ö°¡ ¸ðµÎ 3°³ÀÌ¹Ç·Î 9°³ÀÇ ¿äÀÎÀ» ¾Æ·¡ ±×¸² <b>°³Ã¼-³» º¯¼ö</b>¿¡ Ãß°¡ÇÑ´Ù.
- ÀÌ º¯¼ö´Â <b>º¯È¯-&gt;º¯¼ö°è»ê</b>¸Þ´º¿¡¼­ ±âÁ¸¿¡ Á¸ÀçÇÏ´Â º¯¼öÀÇ °ª¿¡¼­ »õ·Î¿î º¯¼ö¸¦ ´ÙÀ½°ú °°ÀÌ ¸¸µç´Ù.
+ <b><h3> ë‘ ìš”ì¸ ë°˜ë³µì¸¡ì • ë¶„ì‚°ë¶„ì„(two - way repeated measures analysis of variance) </h3></b>
+ ë°˜ë³µì¸¡ì •í•œ ë³€ìˆ˜ë¥¼ <b>ê°œì²´-ë‚´ ë³€ìˆ˜</b>ì— ì¶”ê°€í•œë‹¤.
+ ë‘ ìš”ì¸ì¸ ê²½ìš° ìš”ì¸ìˆ˜ëŠ” ì²« ë²ˆì§¸ ìš”ì¸ìˆ˜ì™€ ë‘ ë²ˆì§¸ ìš”ì¸ìˆ˜ë¥¼ ê³±í•œ ê°’ì´ ë¶„ì„ì— ì‚¬ìš©í•  ìš”ì¸ìˆ˜ì´ë‹¤.
+ ì—¬ê¸°ì„œëŠ” ìš”ì¸ìˆ˜ê°€ ëª¨ë‘ 3ê°œì´ë¯€ë¡œ 9ê°œì˜ ìš”ì¸ì„ ì•„ëž˜ ê·¸ë¦¼ <b>ê°œì²´-ë‚´ ë³€ìˆ˜</b>ì— ì¶”ê°€í•œë‹¤.
+ ì´ ë³€ìˆ˜ëŠ” <b>ë³€í™˜-&gt;ë³€ìˆ˜ê³„ì‚°</b>ë©”ë‰´ì—ì„œ ê¸°ì¡´ì— ì¡´ìž¬í•˜ëŠ” ë³€ìˆ˜ì˜ ê°’ì—ì„œ ìƒˆë¡œìš´ ë³€ìˆ˜ë¥¼ ë‹¤ìŒê³¼ ê°™ì´ ë§Œë“ ë‹¤.
  <ol>
- <li> »õº¯¼ö11 = Ã¹ ¹øÂ° ¿äÀÎÀÇ 1 ¼öÁØ°ª+ µÎ ¹øÂ° ¿äÀÎ 1 ¼öÁØ°ª
- <li> »õº¯¼ö12 = Ã¹ ¹øÂ° ¿äÀÎÀÇ 1 ¼öÁØ°ª+ µÎ ¹øÂ° ¿äÀÎ 2 ¼öÁØ°ª
- <li> »õº¯¼ö13 = Ã¹ ¹øÂ° ¿äÀÎÀÇ 1 ¼öÁØ°ª+ µÎ ¹øÂ° ¿äÀÎ 3 ¼öÁØ°ª
- <li> »õº¯¼ö21 = Ã¹ ¹øÂ° ¿äÀÎÀÇ 2 ¼öÁØ°ª+ µÎ ¹øÂ° ¿äÀÎ 1 ¼öÁØ°ª
- <li> »õº¯¼ö22 = Ã¹ ¹øÂ° ¿äÀÎÀÇ 2 ¼öÁØ°ª+ µÎ ¹øÂ° ¿äÀÎ 2 ¼öÁØ°ª
- <li> »õº¯¼ö23 = Ã¹ ¹øÂ° ¿äÀÎÀÇ 2 ¼öÁØ°ª+ µÎ ¹øÂ° ¿äÀÎ 3 ¼öÁØ°ª
- <li> »õº¯¼ö31 = Ã¹ ¹øÂ° ¿äÀÎÀÇ 3 ¼öÁØ°ª+ µÎ ¹øÂ° ¿äÀÎ 1 ¼öÁØ°ª
- <li> »õº¯¼ö32 = Ã¹ ¹øÂ° ¿äÀÎÀÇ 3 ¼öÁØ°ª+ µÎ ¹øÂ° ¿äÀÎ 2 ¼öÁØ°ª
- <li> »õº¯¼ö33 = Ã¹ ¹øÂ° ¿äÀÎÀÇ 3 ¼öÁØ°ª+ µÎ ¹øÂ° ¿äÀÎ 3 ¼öÁØ°ª
+ <li> ìƒˆë³€ìˆ˜11 = ì²« ë²ˆì§¸ ìš”ì¸ì˜ 1 ìˆ˜ì¤€ê°’+ ë‘ ë²ˆì§¸ ìš”ì¸ 1 ìˆ˜ì¤€ê°’
+ <li> ìƒˆë³€ìˆ˜12 = ì²« ë²ˆì§¸ ìš”ì¸ì˜ 1 ìˆ˜ì¤€ê°’+ ë‘ ë²ˆì§¸ ìš”ì¸ 2 ìˆ˜ì¤€ê°’
+ <li> ìƒˆë³€ìˆ˜13 = ì²« ë²ˆì§¸ ìš”ì¸ì˜ 1 ìˆ˜ì¤€ê°’+ ë‘ ë²ˆì§¸ ìš”ì¸ 3 ìˆ˜ì¤€ê°’
+ <li> ìƒˆë³€ìˆ˜21 = ì²« ë²ˆì§¸ ìš”ì¸ì˜ 2 ìˆ˜ì¤€ê°’+ ë‘ ë²ˆì§¸ ìš”ì¸ 1 ìˆ˜ì¤€ê°’
+ <li> ìƒˆë³€ìˆ˜22 = ì²« ë²ˆì§¸ ìš”ì¸ì˜ 2 ìˆ˜ì¤€ê°’+ ë‘ ë²ˆì§¸ ìš”ì¸ 2 ìˆ˜ì¤€ê°’
+ <li> ìƒˆë³€ìˆ˜23 = ì²« ë²ˆì§¸ ìš”ì¸ì˜ 2 ìˆ˜ì¤€ê°’+ ë‘ ë²ˆì§¸ ìš”ì¸ 3 ìˆ˜ì¤€ê°’
+ <li> ìƒˆë³€ìˆ˜31 = ì²« ë²ˆì§¸ ìš”ì¸ì˜ 3 ìˆ˜ì¤€ê°’+ ë‘ ë²ˆì§¸ ìš”ì¸ 1 ìˆ˜ì¤€ê°’
+ <li> ìƒˆë³€ìˆ˜32 = ì²« ë²ˆì§¸ ìš”ì¸ì˜ 3 ìˆ˜ì¤€ê°’+ ë‘ ë²ˆì§¸ ìš”ì¸ 2 ìˆ˜ì¤€ê°’
+ <li> ìƒˆë³€ìˆ˜33 = ì²« ë²ˆì§¸ ìš”ì¸ì˜ 3 ìˆ˜ì¤€ê°’+ ë‘ ë²ˆì§¸ ìš”ì¸ 3 ìˆ˜ì¤€ê°’
  </ol>
  <p>
     <img src=repeated2_proc2.bmp><hr><p>
-  <a href=repanova07.html>ÀÌÀü</a> |
-   <a href=repanova09.html>´ÙÀ½</a> |
-   <a href=repanova07.html>Ã³À½À¸·Î</a> |
-   <a href=index.html>´Ù¸¥ °ËÁ¤ ¹æ¹ý º¸±â</a>
+  <a href=repanova07.html>ì´ì „</a> |
+   <a href=repanova09.html>ë‹¤ìŒ</a> |
+   <a href=repanova07.html>ì²˜ìŒìœ¼ë¡œ</a> |
+   <a href=index.html>ë‹¤ë¥¸ ê²€ì • ë°©ë²• ë³´ê¸°</a>
    <HR><ADDRESS><FONT COLOR=BLUE>hmkang@hallym.ac.kr</FONT></ADDRESS>
 </html>

@@ -1,30 +1,30 @@
-<html>
+ï»¿<html>
    <STYLE TYPE=TEXT/CSS>
       @import url(highlight.css);
    </STYLE>
- <h3> ÀÏ¿ø¹èÄ¡ ºÐ»êºÐ¼®(one - way analysis of variance) </h3>
+ <h3> ì¼ì›ë°°ì¹˜ ë¶„ì‚°ë¶„ì„(one - way analysis of variance) </h3>
  <p>
  <table border=0>
-   <tr><td> °ËÁ¤¿¡ »ç¿ëÇÒ µÎ º¯¼ö¸¦ ¼±ÅÃÇÏ¿© "<b>Á¾¼Óº¯¼ö</b>"¿¡ "<b>À¯¸®°­µµ</b>"º¯¼ö¸¦ ÀÔ·ÂÇÏ°í
- "<b>¿äÀÎ</b>"¿¡ "<b>À¯¸®Á¾·ù</b>"¸¦ ÀÔ·ÂÇÏ¿© ÀÏ¿ø¹èÄ¡ ºÐ»êºÐ¼®À» ½ÇÇàÇÑ´Ù. <b>¿É¼Ç</b> ¹öÆ°À» ´©¸£°í <b>±â¼úÅë°è</b>, <b>ºÐ»ê µ¿Áú¼º °ËÁ¤</b>, <b>Welch</b>¸¦ ¼±ÅÃÇÏ°í <b>È®ÀÎ</b> ¹öÆ°À» Å¬¸¯ÇÑ´Ù.
-   <td> °ËÁ¤¿¡ »ç¿ëÇÒ µÎ º¯¼ö¸¦ ¼±ÅÃÇÏ¿© "<b>Á¾¼Óº¯¼ö</b>"¿¡ "<b>À¯¸®°­µµ</b>"º¯¼ö¸¦ ÀÔ·ÂÇÏ°í
- "<b>¿äÀÎ</b>"¿¡ "<b>¿Âµµ</b>"¸¦ ÀÔ·ÂÇÏ¿© ÀÏ¿ø¹èÄ¡ ºÐ»êºÐ¼®À» ½ÇÇàÇÑ´Ù. <b>¿É¼Ç</b> ¹öÆ°À» ´©¸£°í <b>±â¼úÅë°è</b>, <b>ºÐ»ê µ¿Áú¼º °ËÁ¤</b>, <b>Welch</b>¸¦ ¼±ÅÃÇÏ°í <b>È®ÀÎ</b> ¹öÆ°À» Å¬¸¯ÇÑ´Ù.
+   <tr><td> ê²€ì •ì— ì‚¬ìš©í•  ë‘ ë³€ìˆ˜ë¥¼ ì„ íƒí•˜ì—¬ "<b>ì¢…ì†ë³€ìˆ˜</b>"ì— "<b>ìœ ë¦¬ê°•ë„</b>"ë³€ìˆ˜ë¥¼ ìž…ë ¥í•˜ê³ 
+ "<b>ìš”ì¸</b>"ì— "<b>ìœ ë¦¬ì¢…ë¥˜</b>"ë¥¼ ìž…ë ¥í•˜ì—¬ ì¼ì›ë°°ì¹˜ ë¶„ì‚°ë¶„ì„ì„ ì‹¤í–‰í•œë‹¤. <b>ì˜µì…˜</b> ë²„íŠ¼ì„ ëˆ„ë¥´ê³  <b>ê¸°ìˆ í†µê³„</b>, <b>ë¶„ì‚° ë™ì§ˆì„± ê²€ì •</b>, <b>Welch</b>ë¥¼ ì„ íƒí•˜ê³  <b>í™•ì¸</b> ë²„íŠ¼ì„ í´ë¦­í•œë‹¤.
+   <td> ê²€ì •ì— ì‚¬ìš©í•  ë‘ ë³€ìˆ˜ë¥¼ ì„ íƒí•˜ì—¬ "<b>ì¢…ì†ë³€ìˆ˜</b>"ì— "<b>ìœ ë¦¬ê°•ë„</b>"ë³€ìˆ˜ë¥¼ ìž…ë ¥í•˜ê³ 
+ "<b>ìš”ì¸</b>"ì— "<b>ì˜¨ë„</b>"ë¥¼ ìž…ë ¥í•˜ì—¬ ì¼ì›ë°°ì¹˜ ë¶„ì‚°ë¶„ì„ì„ ì‹¤í–‰í•œë‹¤. <b>ì˜µì…˜</b> ë²„íŠ¼ì„ ëˆ„ë¥´ê³  <b>ê¸°ìˆ í†µê³„</b>, <b>ë¶„ì‚° ë™ì§ˆì„± ê²€ì •</b>, <b>Welch</b>ë¥¼ ì„ íƒí•˜ê³  <b>í™•ì¸</b> ë²„íŠ¼ì„ í´ë¦­í•œë‹¤.
    <tr><td><img src=anova02.png>
        <td><img src=anova02-2.png>
  </table>
- <b>¿É¼Ç</b>¿¡¼­
+ <b>ì˜µì…˜</b>ì—ì„œ
  <ul>
- <li><b>±â¼úÅë°è</b> : Æò±ÕÀ» ºñ±³ÇÏ·Á°í ÀÔ·ÂÇÑ <b>¿äÀÎ</b>ÀÇ °¢ ±×·ì¸¶´Ù Æò±Õ, ºÐ»ê, Ç¥ÁØ¿ÀÂ÷ µî ±âÃÊÅë°è·® Ãâ·Â
- <li><b>ºÐ»ê µ¿Áú¼º °ËÁ¤</b> : ¿äÀÎÀÇ °¢ ±×·ì¸¶´Ù Æò±ÕÀÌ °°ÀºÁö °ËÁ¤ÇÑ´Ù.
+ <li><b>ê¸°ìˆ í†µê³„</b> : í‰ê· ì„ ë¹„êµí•˜ë ¤ê³  ìž…ë ¥í•œ <b>ìš”ì¸</b>ì˜ ê° ê·¸ë£¹ë§ˆë‹¤ í‰ê· , ë¶„ì‚°, í‘œì¤€ì˜¤ì°¨ ë“± ê¸°ì´ˆí†µê³„ëŸ‰ ì¶œë ¥
+ <li><b>ë¶„ì‚° ë™ì§ˆì„± ê²€ì •</b> : ìš”ì¸ì˜ ê° ê·¸ë£¹ë§ˆë‹¤ í‰ê· ì´ ê°™ì€ì§€ ê²€ì •í•œë‹¤.
  <ul>
- <li>°ËÁ¤°á°ú ¿äÀÎÀÇ °¢ ±×·ì¸¶´Ù <b>ºÐ»êÀÌ °°´Ù¸é ºÐ»êºÐ¼®</b>À¸·Î °¢ ¿äÀÎÀÇ ±×·ìº° Æò±ÕÀ» ºñ±³ÇÏ°í
- <li>°ËÁ¤°á°ú ¿äÀÎÀÇ °¢ ±×·ì¸¶´Ù <b>ºÐ»êÀÌ ´Ù¸£´Ù¸é Welch</b>·Î °¢ ¿äÀÎÀÇ ±×·ìº° Æò±Õ ºñ±³ÇÑ´Ù.
+ <li>ê²€ì •ê²°ê³¼ ìš”ì¸ì˜ ê° ê·¸ë£¹ë§ˆë‹¤ <b>ë¶„ì‚°ì´ ê°™ë‹¤ë©´ ë¶„ì‚°ë¶„ì„</b>ìœ¼ë¡œ ê° ìš”ì¸ì˜ ê·¸ë£¹ë³„ í‰ê· ì„ ë¹„êµí•˜ê³ 
+ <li>ê²€ì •ê²°ê³¼ ìš”ì¸ì˜ ê° ê·¸ë£¹ë§ˆë‹¤ <b>ë¶„ì‚°ì´ ë‹¤ë¥´ë‹¤ë©´ Welch</b>ë¡œ ê° ìš”ì¸ì˜ ê·¸ë£¹ë³„ í‰ê·  ë¹„êµí•œë‹¤.
  </ul>
- <li><b>Welch</b> : °ËÁ¤°á°ú ¿äÀÎÀÇ °¢ ±×·ì¸¶´Ù <b>ºÐ»êÀÌ ´Ù¸¦ ¶§</b> °¢ ¿äÀÎÀÇ ±×·ìº° Æò±Õºñ±³
+ <li><b>Welch</b> : ê²€ì •ê²°ê³¼ ìš”ì¸ì˜ ê° ê·¸ë£¹ë§ˆë‹¤ <b>ë¶„ì‚°ì´ ë‹¤ë¥¼ ë•Œ</b> ê° ìš”ì¸ì˜ ê·¸ë£¹ë³„ í‰ê· ë¹„êµ
  </ul>
-   <a href=anova01.html>ÀÌÀü</a> |
-   <a href=anova03.html>´ÙÀ½</a> |
-   <a href=anova01.html>Ã³À½À¸·Î</a> |
-   <a href=index.html>´Ù¸¥ °ËÁ¤ ¹æ¹ý º¸±â</a>
+   <a href=anova01.html>ì´ì „</a> |
+   <a href=anova03.html>ë‹¤ìŒ</a> |
+   <a href=anova01.html>ì²˜ìŒìœ¼ë¡œ</a> |
+   <a href=index.html>ë‹¤ë¥¸ ê²€ì • ë°©ë²• ë³´ê¸°</a>
    <HR><ADDRESS><FONT COLOR=BLUE>hmkang@hallym.ac.kr</FONT></ADDRESS>
 </html>
