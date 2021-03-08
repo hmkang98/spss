@@ -2,11 +2,32 @@
    <STYLE TYPE=TEXT/CSS>
       @import url(highlight.css);
    </STYLE>
-<b><h3> 적합도 검정</h3></b> 
+<b><h3 id="first"> 적합도 검정</h3></b> 
  <b>적합도 검정</b>은 그림에서와 같이 "<b>분석-&gt;비모수 검정-&gt;레거시 대화 상자-&gt;카이제곱</b>" 메뉴를 선택한다. 
  검정에 사용하는 자료가 <font color=red><a href=goodness.sav>여기</a></font>에 있다.
  <p>
    <img src=category01.png><hr><p>
-   <a href=index.html>이전</a>|<a href=category02.html>다음</a>|<a href=index.html>다른 검정방법 보기</a>|<a href=../index.html>홈으로</a>
+
+ 아래의 그림과 같이 원자료(raw data)가 아니고 요약된 변수가 저장되어 있다면 
+ <u>적합도 검정을 실행하기 전에</u> 
+ <b>관측값</b> 변수에 <b>가중치</b>를 적용한 후  <b>적합도 검정</b>을 실시해야 한다.
+ <b>가중치</b> 적용은 
+ <ol>
+ <li>"<b>데이터-&gt;가중 케이스</b>" 메뉴를 또는 표준메뉴에서 <b>가중케이스 버튼</b>를 선택
+ <li>"<b>가중 케이스 창</b>"에서 "<b>관측값</b>" 변수를 "<b>가중케이스 지정</b>"의 "<b>빈도변수</b>"에 추가한다  
+ </ol>   
+ <p>
+   <img src=category02.png><hr><p>
+
+ "<b>카이제곱 검정</b>"은 <b>검정변수</b>에 검정할 내용에 대한 변수를 선택하여 입력하고
+ "<b>기대값</b>"의 "<b>값</b>"에는 <b>검정변수</b>의 기대값 또는 비율을 입력한다.
+ <p>
+   <img src=category03.png><hr><p>
+
+적합도 검정에 대한 검정결과가 출력되며 <b>카이제곱의 근사 유의확률</b>이 <b>0.270</b>로 유전비율은 1:2:1이라고 할 수 있다. 
+ <p>
+   <img src=category04.png><hr><p>
+
+   <a href="#first">맨 위로 </a>| <a href=index.html>다른 검정방법 보기</a> | <a href=../index.html>분석방법으로</a>
    <HR><ADDRESS><FONT COLOR=BLUE>hmkang@hallym.ac.kr</FONT></ADDRESS>
 </html>

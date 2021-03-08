@@ -2,7 +2,7 @@
    <STYLE TYPE=TEXT/CSS>
       @import url(highlight.css);
    </STYLE>
- <b><h3> 공분산분석(analysis of covariance) </h3></b>
+ <b><h3 id="first"> 공분산분석(analysis of covariance) </h3></b>
  나병환자의 치료법을 연구하기 위하여 A, D 두 항생제의 효과를 비교하려고 한다.
 실험에 참여하는 나병환자를 랜덤하게 30명을 뽑은 후 10명에게는 항생제 A, 10명에게는 항생제 D, 
 나머지 10명 대조군에게는 생리식염수를 투여하고 그 경과를 관찰하였다. 또한 추가로 치료전과 치료후 나병균의
@@ -15,7 +15,52 @@
 </ul>검정에 사용하는 자료가 <font color=red><a href=ancova2.sav>여기</a></font>에 있다. 
 <p>
    <img src=ancova1.png><hr><p>
-   <a href=ancova02.html>다음</a>|
-   <a href=../index.html>홈으로</a>
+
+ 각 변수와 교호작용을 모형에 추가한다.
+ <p>
+    <img src=ancova2.png><hr><p>
+
+ <b>옵션</b>에서 다음 그림과 같이 선택한다.
+ <p>
+    <img src=ancova3.png><hr><p>
+
+기술통계량 출력결과
+<p>
+    <img src=ancova4.png><hr><p>
+
+ 개체-내 효과 검정과 개체-내 대비 검정 결과 : 교호작용은 유의하지 않으므로 분석에서 제외함.
+ 만일 교호작용이 존재하면 공분산분석은 의미없음.
+ <p>
+    <img src=ancova5.png><hr><p>
+
+ 각 변수만 모형에 추가하고 교호작용은 모형에서 제외한다.
+ <p>
+    <img src=ancova6.png><hr><p>
+
+ 평균 비교는 <b>옵션</b>에서 다음 그림과 같이 선택한다.
+<p>
+   <img src=ancova7.png><hr><p>
+
+ 개체-내 효과 검정(Type III Sum of Squares) 출력결과
+ <p>
+    <img src=ancova8.png><hr><p>
+
+모수 추정값 출력결과
+<p>
+    <img src=ancova9.png><hr><p>
+
+공변량과 종속변수 기술 통계량 출력결과와 종속변수 추정값<p>
+    <table border=0>
+	  <tr>
+	    <td><img src=ancova12.png>
+	    <td><img src=ancova4.png>
+		<td><img src=ancova10.png>
+	</table>
+<p>
+
+ 집단별 평균 차이 검정 결과
+ <p>
+    <img src=ancova11.png><hr><p>
+   <a href="#first">맨 위로</a> | <a href=../index.html>분석방법화면으로</a>
    <HR><ADDRESS><FONT COLOR=BLUE>hmkang@hallym.ac.kr</FONT></ADDRESS>
 </html>

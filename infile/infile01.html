@@ -2,11 +2,87 @@
    <STYLE TYPE=TEXT/CSS>
       @import url(highlight.css);
    </STYLE>
- <h3>외부파일 불러오기</h3>
+ <h3 id="first">외부파일 불러오기</h3>
  SPSS 데이터 파일(확장자 .SAV)이 아닌 외부 데이터를 불러오는 과정에 대하여 알아보자. 
  그림과 같이 "<b>파일(File)-&gt;열기(Open)-&gt;데이터(Data)</b>" 메뉴를
  선택한다. 여기서 사용한 자료는 <font color=red><a href=bmi2.txt>여기</a></font>에서 구할 수 있다.<p>
    <img src=infile01.png><hr><p>
-   <a href=infile02.html>다음</a>|<a href=../index.html>홈으로</a>
+
+ 불러올 파일이 있는 폴더로 이동한다. "<b>파일 형식</b>"을 "<b>모든 파일</b>"로 바꾸어 모든 파일 중에서 외부 데이터가 보이도록 한다.<br>
+ 해당 파일을 선택한 후 "<b>열기</b>" 버튼을 누른다.
+ <p>
+   <img src=infile02.png><hr><p>
+
+"<b>텍스트 가져오기 마법사 6단계 중 1단계(Text Import Wizard)</b>" 화면이 보인다.
+설정값을 변경하지 말고 "<b>다음</b>" 버튼을 누른다.
+   <p>
+   <img src=infile03.png><hr><p>
+
+"<b>텍스트 가져오기 마법사 2단계(Text Import Wizard)</b>"에서는 SPSS 셀에 들어갈 자료를 공백이나 탭 등 구분자로 할 것인가
+  한 셀에 들어갈 자료의 크기를 
+  <ul>
+    <li>"<b>구분자에 의한 배열(Delimited)</b>" 
+    <li>"<b>고정 너비로 배열(Fixed Width)</b>
+  </ul>
+  중 하나를 선택하고,
+  불러들일 파일의 첫 행에
+  변수의 이름이 있는지 선택한다. 설정값을 변경하지 말고 "<b>다음</b>" 버튼을 누른다.<p>
+   <img src=infile04.png><hr><p>
+
+<h3> 구분자에 의한 배열(Delimited)을 선택한 경우 </h3>
+"<b>텍스트 가져오기 마법사 3단계(Text Import Wizard)</b>"에서는 몇 줄부터 몇 줄까지 자료를 가져올 것인지 설정하는 단계이다.
+설정값을 변경하지 않고 "<b>다음</b>" 버튼을 누른다.
+<p>
+   <img src=infile05.png><hr><p>
+
+ "<b>텍스트 가져오기 마법사 4단계(Text Import Wizard)</b>"에서는 구분자를 설정하는 단계이다. 
+   각 변수를 구분할 구분자는 여러 개를 지정해도 된다. 설정값을 변경하지 말고 "<b>다음</b>" 버튼을 누른다.<P>
+   <img src=infile06.png><hr><p>
+
+"<b>텍스트 가져오기 마법사 5단계(Text Import Wizard)</b>"에서는 
+"<b>변수이름(Variable Name)"과 "데이터 형식(Data Format)</b>"을 지정하는 단계이다. 그 이전
+단계에서 이미 지정되어야만 이 단계에서 설정을 할 수 있다. 설정값을 변경하지 않고 "<b>다음</b>" 버튼을 누른다.
+<p>
+   <img src=infile07.png><hr><p>
+
+"<b>텍스트 가져오기 마법사 6단계(Text Import Wizard)</b>"에서는 불러온 파일을 저장할 것인지 설정하고, 
+SPSS 스크립트를 삽입할 것인지 설정하는 단계이다. 설정 값을 변경하지 않고 "<b>마침</b>" 버튼을 누른다.
+<P>
+   <img src=infile08.png><hr><p>
+
+ 데이터가 올바른 과정으로 불려지면 다음과 같은 화면이 나타난다.
+   <P>
+   <img src=infile09.png><hr><p>
+
+  불러온 파일을 SPSS 데이터 형식(확장자 .SAV)로 저장한다.
+   <P>
+   <img src=infile10.png><hr><p>
+
+"<b>변수 보기(Variable View)</b>" 시트에서 
+ <ul>
+   <li><b>이름</b>에 변수명을 "키", "몸무게", "출생년도", "종교", "성별", "결혼여부"로 입력한다.
+   <li><b>값</b>에 
+     <ul>
+	   <li> 종교는 1 은 불교, 2 는 기독교, 3 은 카톨릭, 4 는 없음
+	   <li> 성별에 1 은 여, 2 는 남
+	   <li> 결혼여부에 1 은 기혼, 2 는 미혼
+	 </ul>
+	 으로 설정한다.
+ </ul>
+   <P>
+   <img src=infile11.png><hr><p>
+
+변수값을 설명하는 화면이다. "<b>변수 보기(Variable View)</b>" 시트에서 "값(Value)"을 선택하면
+다음과 같은 화면이 나타난다. 
+여기에 적당한 값을 "<b>추가(Add)</b>"하고 입력이 완료되면 "<b>확인(OK)</b>" 버튼을 누른다.
+   <P>
+   <img src=infile12.png><hr><p>
+
+  불러온 자료의 설정이 완료되면 저장하여 이후에 사용이 가능하도록 특정한
+   폴더를 선택한후 SPSS 파일로 저장한다.
+   <P>
+   <img src=infile13.png><hr><p>
+
+   <a href="#first">맨 위로 </a> | <a href=../index.html>분석방법으로</a>
    <HR><ADDRESS><FONT COLOR=BLUE>hmkang@hallym.ac.kr</FONT></ADDRESS>
 </html>
